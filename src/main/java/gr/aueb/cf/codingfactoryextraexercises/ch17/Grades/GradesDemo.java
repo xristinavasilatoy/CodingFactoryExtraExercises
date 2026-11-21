@@ -10,16 +10,19 @@ public class GradesDemo {
 
     public void gradesPass() {
 
-        Iterator<Integer> it = list.iterator();
-        while(it.hasNext()){
 
-            if (it.next() < 5) {
-                it.remove();
-        }
+        list.removeIf(n -> n < 5);
 
         }
-        for (int n : list) {
-            System.out.println(n);
+//        while(it.hasNext()){
+//
+//            if (it.next() < 5) {
+//                it.remove();
         }
-    }
-}
+
+ //       }
+//        for (int n : list) {
+//            System.out.println(n);
+ //       }
+ //   }
+//}
